@@ -1,0 +1,98 @@
+header .wrap{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/736/277/large/charlotte-kujawiak-screenshot-009.jpg?1508177676);
+    background-size: cover;
+}
+
+footer .wrap{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/007/736/277/large/charlotte-kujawiak-screenshot-009.jpg?1508177676);
+    background-size: cover;
+}
+
+header h5{    
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.wrap{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color:rgb(235, 235, 235);    
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 10% 10px 10%;
+   gap: 10px;
+}
+.textblock{
+    font-size: 11pt    
+}
+.section{
+    margin: 5px 0 5px 0;
+}
+.imgframe{
+    width: 200px;
+    height: 200px;
+    background-color:coral;
+}
+
+.imgframe img{
+    width: 100%;
+    height: 100%;
+}
+
+/* mediaquery */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .wrap{
+        max-width: 420px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .wrap{
+        max-width: 550px;
+        min-width: 320px;
+    }
+    .container{
+        flex-direction: column;
+        min-width: 320px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .wrap{
+        max-width: 650px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .wrap{
+        max-width: 800px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .wrap{
+        max-width: 1100px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+}
